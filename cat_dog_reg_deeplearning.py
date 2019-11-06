@@ -30,7 +30,7 @@ def create_train_data():
 train_data = np.load('train_data.npy', allow_pickle=True)
 # print(len(train_data))
 
-X = np.array([i[0] for i in train_data]).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
+X = np.array([i[0] for i in train_data]).reshape(-1, IMG_SIZE, IMG_SIZE, 1)/255.0
 y = np.array([i[1] for i in train_data])
 for i in range(10):
     print(y[i])
@@ -53,10 +53,10 @@ pickle_out = open('y.pickle', 'wb')
 pickle.dump(y, pickle_out)
 pickle_out.close()
 
-pickle_in = open('X.pickle', 'rb')
-X = pickle.load(pickle_in)
-pickle_in.close()
+# pickle_in = open('X.pickle', 'rb')
+# X = pickle.load(pickle_in)
+# pickle_in.close()
 
-pickle_in = open('y.pickle', 'rb')
-y = pickle.load(pickle_in)
-pickle_in.close()
+# pickle_in = open('y.pickle', 'rb')
+# y = pickle.load(pickle_in)
+# pickle_in.close()
