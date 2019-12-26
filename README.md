@@ -1,5 +1,5 @@
 # cat_dog_reg_ver2
-# Thanks Sir. sentdex with his tutorial "How to use your trained model - Deep Learning basics with Python, TensorFlow and Keras" 
+#  "How to use your trained model - Deep Learning basics with Python, TensorFlow and Keras" 
 tensorflow model 
 The Project use training data from website https://www.microsoft.com/en-us/download/details.aspx?id=54765. It will be divided into 
 3 steps 
@@ -12,3 +12,4 @@ cat_dog.model .
 
 Step 3: Get grayscaled, resized, and reshaped test image and use the model cat_dog to make a prediction.
 
+Thanks Sir. sentdex with his tutorial .
