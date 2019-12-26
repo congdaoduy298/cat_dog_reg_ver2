@@ -3,6 +3,7 @@
 tensorflow model 
 The Project use training data from website https://www.microsoft.com/en-us/download/details.aspx?id=54765. It will be divided into 
 3 steps 
+
 Step 1: Read file from folder. Create training data : convert data to numpy array and normalize data. Save the training data file 
 to pickle file. 
 
